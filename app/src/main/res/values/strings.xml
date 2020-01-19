@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">E-Commerce56</string>
+    <string name="retry">Retry</string>
+    <string name="post_error">An error occurred while loading the data</string>
+    <string name="title_home">Home</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="title_share">Share</string>
+    <string name="title_product_detail">Product Detail</string>
+    <string name="btn_buy">Buy</string>
+    <string name="title_purchase_history">Purchase History</string>
+    <string name="insert_purchase_history_error">Insert data failed</string>
+    <string name="insert_purchase_history_success">Success buy product</string>
+</resources>
