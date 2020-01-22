@@ -5,8 +5,6 @@ import com.mylektop.ecommerce56.ui.home.CategoryViewModel
 import com.mylektop.ecommerce56.ui.home.HomeListViewModel
 import com.mylektop.ecommerce56.ui.home.ProductViewModel
 import com.mylektop.ecommerce56.ui.login.LoginViewModel
-import com.mylektop.ecommerce56.ui.post.PostListViewModel
-import com.mylektop.ecommerce56.ui.post.PostViewModel
 import com.mylektop.ecommerce56.ui.productDetail.ProductDetailViewModel
 import com.mylektop.ecommerce56.ui.purchaseHistory.PurchaseHistoryViewModel
 import com.mylektop.ecommerce56.ui.search.SearchViewModel
@@ -60,18 +58,6 @@ interface ViewModelInjector {
      * @param purchaseHistoryViewModel PurchaseHistoryViewModel in which to inject the dependencies
      */
     fun inject(purchaseHistoryViewModel: PurchaseHistoryViewModel)
-
-    /**
-     * Injects required dependencies into the specified PostListViewModel.
-     * @param postListViewModel PostListViewModel in which to inject the dependencies
-     */
-    fun inject(postListViewModel: PostListViewModel)
-
-    /**
-     * Injects required dependencies into the specified PostViewModel.
-     * @param postViewModel PostViewModel in which to inject the dependencies
-     */
-    fun inject(postViewModel: PostViewModel)
 
     @Component.Builder
     interface Builder {

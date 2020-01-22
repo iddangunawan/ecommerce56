@@ -1,7 +1,6 @@
 package com.mylektop.ecommerce56.injection.module
 
 import com.mylektop.ecommerce56.network.HomeApi
-import com.mylektop.ecommerce56.network.PostApi
 import com.mylektop.ecommerce56.utils.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -30,18 +29,6 @@ object NetworkModule {
     @JvmStatic
     internal fun provideHomeApi(retrofit: Retrofit): HomeApi {
         return retrofit.create(HomeApi::class.java)
-    }
-
-    /**
-     * Provides the Post service implementation.
-     * @param retrofit the Retrofit object used to instantiate the service
-     * @return the Post service implementation.
-     */
-    @Provides
-    @Reusable
-    @JvmStatic
-    internal fun providePostApi(retrofit: Retrofit): PostApi {
-        return retrofit.create(PostApi::class.java)
     }
 
     /**

@@ -8,8 +8,6 @@ import com.mylektop.ecommerce56.ui.home.CategoryViewModel
 import com.mylektop.ecommerce56.ui.home.HomeListViewModel
 import com.mylektop.ecommerce56.ui.home.ProductViewModel
 import com.mylektop.ecommerce56.ui.login.LoginViewModel
-import com.mylektop.ecommerce56.ui.post.PostListViewModel
-import com.mylektop.ecommerce56.ui.post.PostViewModel
 import com.mylektop.ecommerce56.ui.productDetail.ProductDetailViewModel
 import com.mylektop.ecommerce56.ui.purchaseHistory.PurchaseHistoryViewModel
 import com.mylektop.ecommerce56.ui.search.SearchViewModel
@@ -36,8 +34,6 @@ abstract class BaseViewModel : ViewModel() {
             is SearchViewModel -> injector.inject(this)
             is ProductDetailViewModel -> injector.inject(this)
             is PurchaseHistoryViewModel -> injector.inject(this)
-            is PostListViewModel -> injector.inject(this)
-            is PostViewModel -> injector.inject(this)
         }
     }
 }
